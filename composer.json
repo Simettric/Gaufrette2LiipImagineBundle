@@ -1,0 +1,22 @@
+{
+  "name": "simettric/gaufrette-to-liip-imagine-bundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Asier Marqués",
+      "email": "asiermarques@gmail.com"
+    }
+  ],
+  "type": "symfony-bundle",
+  "autoload": {
+    "psr-4": {
+      "Simettric\\SimettricGaufrette2LiipImagineBundle\\": ""
+    }
+  },
+  "require": {
+    "php": ">=5.5.9",
+    "symfony/symfony": "~3.0",
+    "liip/imagine-bundle": "^1.5",
+    "knplabs/knp-gaufrette-bundle": "~0.3"
+  }
+}
