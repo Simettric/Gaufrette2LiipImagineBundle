@@ -1,7 +1,22 @@
 # GaufretteLiipImageResolverBundle
 With this Bundle you can define resolvers in order to store the liip image cache files in Gaufrette filesystems
 
+Installation
+============
 
+Open a command console, enter your project directory and execute the
+following command to download the latest stable version of this bundle:
+
+```bash
+$ composer require simettric/gaufrette-to-liip-imagine-bundle "dev-master"
+```
+
+This command requires you to have Composer installed globally, as explained
+in the [installation chapter](https://getcomposer.org/doc/00-intro.md)
+of the Composer documentation.
+
+Configuration
+==============
 An example of a resolver configuration:
 
         # app/config/services.yml
