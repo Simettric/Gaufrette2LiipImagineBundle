@@ -13,7 +13,7 @@ use Liip\ImagineBundle\Binary\BinaryInterface;
 use Liip\ImagineBundle\Exception\Imagine\Cache\Resolver\NotResolvableException;
 use Liip\ImagineBundle\Imagine\Cache\Resolver\ResolverInterface;
 
-class GaufretteResolver implements ResolverInterface
+class LiipGaufretteResolver implements ResolverInterface
 {
 
     /**
