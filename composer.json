@@ -10,7 +10,7 @@
   "type": "symfony-bundle",
   "autoload": {
     "psr-4": {
-      "Simettric\\SimettricGaufrette2LiipImagineBundle\\": ""
+      "Simettric\\Gaufrette2LiipImagineBundle\\": ""
     }
   },
   "require": {
