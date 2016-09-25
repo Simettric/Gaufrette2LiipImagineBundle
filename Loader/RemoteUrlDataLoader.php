@@ -10,7 +10,7 @@ namespace Simettric\Gaufrette2LiipImagineBundle\Loader;
 
 use Liip\ImagineBundle\Binary\Loader\LoaderInterface;
 
-class RemoteUrlLoader implements LoaderInterface
+class RemoteUrlDataLoader implements LoaderInterface
 {
 
     /**
