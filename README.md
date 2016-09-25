@@ -91,7 +91,7 @@ To get it working, you need to set it in your liip_imagine configuration
             
         # in your twig template
         
-        {{ "https://domain.com/image.png"|imagine_filter('your_filter') }}
+        <img src="{{ "https://domain.com/image.png"|imagine_filter('your_filter') }}">
         
 This loader needs more improvement, all PRs are welcomed. 
 
