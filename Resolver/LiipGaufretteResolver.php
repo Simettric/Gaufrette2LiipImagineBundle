@@ -81,7 +81,19 @@ class LiipGaufretteResolver implements ResolverInterface
      */
     public function remove(array $paths, array $filters)
     {
-        die("not implemented " . __FILE__);
+        if (empty($paths) || empty($filters)) {
+            return;
+        }
+
+        foreach ($filters as $filter) {
+            foreach ($paths as $path) {
+
+                $this->filesystem->delete($this->getLocalNameToStore($path, $filter));
+
+            }
+        }
+
+        return;
     }
 
 
