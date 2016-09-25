@@ -2,6 +2,7 @@
 
 With this Bundle you can define resolvers in order to store the liip image cache files in Gaufrette filesystems.
 
+This bundle depends on [LiipImagineBundle](https://github.com/liip/LiipImagineBundle) and [KnpGaufretteBundle](https://github.com/KnpLabs/KnpGaufretteBundle).
 
 Installation
 ============
@@ -92,4 +93,5 @@ To get it working, you need to set it in your liip_imagine configuration
         
         {{ "https://domain.com/image.png"|imagine_filter('your_filter') }}
         
+This loader needs more improvement, all PRs are welcomed. 
 
