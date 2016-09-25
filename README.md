@@ -18,8 +18,7 @@ in the [installation chapter](https://getcomposer.org/doc/00-intro.md)
 of the Composer documentation.
 
 Configuration
-=============
-
+==============
 An example of a resolver configuration:
 
 ### Step 1: Define your gaufrette filesystem in order to store the LiipImagine cache files
@@ -77,6 +76,7 @@ This is useful in scenarios where do you want to use different filesystems to st
                        relative_resize: { widen: 400 }
                        
                        
+
 Filtering remote images
 ====================
 
@@ -92,3 +92,4 @@ To get it working, you need to set it in your liip_imagine configuration
         
         {{ "https://domain.com/image.png"|imagine_filter('your_filter') }}
         
+
