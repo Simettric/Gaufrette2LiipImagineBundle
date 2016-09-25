@@ -1,5 +1,6 @@
 services:
     sim.gau2liip.remote_loader:
       class: Simettric\Gaufrette2LiipImagineBundle\Loader\RemoteUrlDataLoader
+      arguments: ['%liip_imagine.default_image%']
       tags:
           - {  name: "liip_imagine.binary.loader", loader: sim_gau2liip_remote_loader }

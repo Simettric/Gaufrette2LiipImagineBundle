@@ -93,5 +93,8 @@ To get it working, you need to set it in your liip_imagine configuration
         
         <img src="{{ "https://domain.com/image.png"|imagine_filter('your_filter') }}">
         
+        
+Note: if the loader can´t find the image, it will load the general default_image configured in the LiipImagine bundle configuration.
+        
 This loader needs more improvement, all PRs are welcomed. 
 

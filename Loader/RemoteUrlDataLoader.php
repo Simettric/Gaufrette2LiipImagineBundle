@@ -13,12 +13,29 @@ use Liip\ImagineBundle\Binary\Loader\LoaderInterface;
 class RemoteUrlDataLoader implements LoaderInterface
 {
 
+    private $default_image;
+
+    function __construct($default_image=null)
+    {
+        $this->default_image = $default_image;
+    }
+
     /**
      * @param mixed $path
      * @return mixed
      */
     public function find($path)
     {
-        return file_get_contents($path);
+        try{
+            return file_get_contents($path);
+        }catch (\Exception $e){
+
+            if($this->default_image)
+            {
+                return file_get_contents($this->default_image);
+            }
+            throw $e;
+        }
+
     }
 }
